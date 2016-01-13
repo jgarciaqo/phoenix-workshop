@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+node_modules
+npm-debug.log
+<<<<<<< HEAD
+=======
+nbproject
+>>>>>>> 3c99c6732441f480b0ae729ab38a715d6607cdff
+=======
+node_modules
+npm-debug.log
+nbproject
+>>>>>>> de79fb6b089addaa4f7e58e896c538c798ff1b11
+=======
 node_modules
 /nbproject/private/
 npm-debug.log
+>>>>>>> b0993a58d3575784385485d03f3d2da7aeb3114a

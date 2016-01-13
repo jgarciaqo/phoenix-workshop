@@ -18,6 +18,12 @@
   },
   "homepage": "https://github.com/jgarciaqo/phoenix-workshop#readme",
   "dependencies": {
+<<<<<<< HEAD
+    "express": "^4.13.3",
+    "nodemon":"1.8.1"
+  }
+=======
     "express": "^4.13.3"  
 }
+>>>>>>> b0993a58d3575784385485d03f3d2da7aeb3114a
 }
