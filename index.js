@@ -9,5 +9,8 @@ app.get('/account', function(req, res) {
    res.send('Account'); 
 });
 
-app.listen(5000);
+app.get('/about-us', function (req, res) {
+  res.send('Goodbye World')
+})
 
+app.listen(5000);
