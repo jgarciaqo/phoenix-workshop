@@ -3,7 +3,10 @@ var app = express()
  
 app.get('/', function (req, res) {
   res.send('Hello World')
+}),
+app.get('/contacts', function (req, res) {
+  res.send('contacts')
 })
  
-app.listen(3000)
+app.listen(3004)
 
