@@ -8,14 +8,6 @@ app.get('/', function (req, res) {
 app.get('/products', function (req, res) {
     res.send("Products")
 })
-
-app.get('/about-us', function (req, res) {
-    res.send("About us")
-})
-
-app.get('/contact', function (req, res) {
-    res.send("Contact")
-})
  
 app.listen(5000)
 
