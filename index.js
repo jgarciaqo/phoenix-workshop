@@ -2,13 +2,13 @@ var express = require('express'); // Anything you "require" must be in the packa
 var app = express();
  
 app.get('/', function (req, res) {
-  res.send('Hello World from');
-});
+  res.send('Hello from 5 restart')
+})
 
-app.get('/account', function(req, res) {
-   res.send('Account'); 
-});
-
+app.get('/products', function (req, res) {
+    res.send("Products")
+})
+ 
 app.get('/about-us', function (req, res) {
   res.send('Goodbye World')
 })
