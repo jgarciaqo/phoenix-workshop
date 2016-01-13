@@ -1,5 +1,5 @@
-var express = require('express')
-var app = express()
+var express = require('express'); // Anything you "require" must be in the package.json file
+var app = express();
  
 app.get('/', function (req, res) {
   res.send('Hello World')
@@ -13,3 +13,4 @@ app.get('/about-us', function (req, res) {
 })
  
 app.listen(5000)
+

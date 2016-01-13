@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 node_modules
 npm-debug.log
 <<<<<<< HEAD
 =======
 nbproject
 >>>>>>> 3c99c6732441f480b0ae729ab38a715d6607cdff
+=======
+node_modules
+npm-debug.log
+nbproject
+>>>>>>> de79fb6b089addaa4f7e58e896c538c798ff1b11
