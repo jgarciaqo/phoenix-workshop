@@ -17,14 +17,14 @@ app.get('/', function (req, res) {
 }),
 
 app.get('/contacts', function (req, res) {
-  res.render('contacts.jade', { title: 'Hey', message: 'contacts'});
+  res.render('contacts.jade', { title: 'Heya', message: 'contacts'});
 }),
 app.get('/products', function (req, res) {
     res.render('products.jade', { title: 'Hey', message: 'products'});
 })
  app.get('/about-us', function (req, res) {
  	var data = aboutusHanlder();
-  res.render('aboutus.jade', { title: 'Hey', message: data.content});
+  res.render('aboutus.jade', { content: data.content});
 })
  app.get('/media', function (req, res) {
   res.render('media.jade', { title: 'Hey', message: 'media'});
