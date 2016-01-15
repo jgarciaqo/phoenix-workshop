@@ -3,6 +3,7 @@ var path = require('path');
 var app = express();
 
 var homeHanlder = require('./lib/homeHandler');
+var aboutusHanlder = require('./lib/about-us');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -22,7 +23,8 @@ app.get('/products', function (req, res) {
     res.render('products.jade', { title: 'Hey', message: 'products'});
 })
  app.get('/about-us', function (req, res) {
-  res.render('aboutus.jade', { title: 'Hey', message: 'about-us'});
+ 	var data = aboutusHanlder();
+  res.render('aboutus.jade', { title: 'Hey', message: data.content});
 })
  app.get('/media', function (req, res) {
   res.render('media.jade', { title: 'Hey', message: 'media'});
