@@ -2,14 +2,17 @@ var express = require('express'); // Anything you "require" must be in the packa
 var path = require('path');
 var app = express();
 
+var homeHanlder = require('./lib/homeHandler');
 
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.get('/', function (req, res) {
-  res.render('index.jade', { content: 'home'});
+  var data = homeHanlder();
+  res.render('index.jade', { content: data.content});
 }),
 
 app.get('/contacts', function (req, res) {
