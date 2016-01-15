@@ -27,6 +27,6 @@ app.get('/products', function (req, res) {
 })
 app.get('/media', function (req, res) {
   var data = mediaHandler();
-  res.render('media.jade', { content: data.content});
+  res.render('media.jade', { content: data.content, images:data.images});
 })
 app.listen(5000)
