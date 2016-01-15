@@ -21,8 +21,6 @@ app.get('/contacts', function (req, res) {
   res.render('contacts.jade', { title: 'Hey', message: 'contacts'});
 }),
 app.get('/products', function (req, res) {
-    res.render('products.jade', { title: 'Hey', message: 'products'});
-    res.render('products.jade', { title: 'Hey', message: 'products'});
     var data = productHanlder();
     res.render('products.jade', { content: data.content});
 })
