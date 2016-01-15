@@ -19,5 +19,7 @@ app.get('/products', function (req, res) {
  app.get('/about-us', function (req, res) {
   res.render('aboutus.jade', { title: 'Hey', message: 'about-us'});
 })
-
+ app.get('/media', function (req, res) {
+  res.render('media.jade', { title: 'Hey', message: 'media'});
+})
 app.listen(5000)
