@@ -7,16 +7,17 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.get('/', function (req, res) {
-  res.render('index.jade', { title: 'Hey', message: 'Hello there!'});
+  res.render('index.jade', { content: 'home'});
 }),
+
 app.get('/contacts', function (req, res) {
-  res.send('contacts')
+  res.render('contacts.jade', { title: 'Hey', message: 'contacts'});
 }),
 app.get('/products', function (req, res) {
-    res.send("Products")
+    res.render('products.jade', { title: 'Hey', message: 'products'});
 })
  app.get('/about-us', function (req, res) {
-  res.send('Goodbye World')
+  res.render('aboutus.jade', { title: 'Hey', message: 'about-us'});
 })
 
 app.listen(5000)
