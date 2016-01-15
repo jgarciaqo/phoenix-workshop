@@ -1,6 +1,6 @@
 {
   "name": "phoenix-workshop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "phoenxi-workshop",
   "main": "index.js",
   "scripts": {

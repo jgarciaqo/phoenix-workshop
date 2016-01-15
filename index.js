@@ -3,8 +3,12 @@ var path = require('path');
 var app = express();
 
 var homeHanlder = require('./lib/homeHandler');
+<<<<<<< HEAD
+var aboutusHanlder = require('./lib/about-us');
+=======
 var mediaHandler = require('./lib/mediaHandler');
 var productHanlder = require('./lib/productHandler');
+>>>>>>> 376f6ab527a2f1c4dc7d2eceeb4d6ed147c173f3
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -18,14 +22,15 @@ app.get('/', function (req, res) {
 }),
 
 app.get('/contacts', function (req, res) {
-  res.render('contacts.jade', { title: 'Hey', message: 'contacts'});
+  res.render('contacts.jade', { title: 'Heya', message: 'contacts'});
 }),
 app.get('/products', function (req, res) {
     var data = productHanlder();
     res.render('products.jade', { content: data.content});
 })
  app.get('/about-us', function (req, res) {
-  res.render('aboutus.jade', { title: 'Hey', message: 'about-us'});
+ 	var data = aboutusHanlder();
+  res.render('aboutus.jade', { content: data.content});
 })
 app.get('/media', function (req, res) {
   var data = mediaHandler();
