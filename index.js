@@ -5,6 +5,7 @@ var app = express();
 var homeHanlder = require('./lib/homeHandler');
 var mediaHandler = require('./lib/mediaHandler');
 var productHanlder = require('./lib/productHandler');
+var contact = require('./lib/contactus');
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -18,7 +19,8 @@ app.get('/', function (req, res) {
 }),
 
 app.get('/contacts', function (req, res) {
-  res.render('contacts.jade', { title: 'Hey', message: 'contacts'});
+    var data = contact();
+  res.render('contacts.jade', {phoneNo:data.phoneNo});
 }),
 app.get('/products', function (req, res) {
     res.render('products.jade', { title: 'Hey', message: 'products'});
