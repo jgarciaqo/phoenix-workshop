@@ -4,14 +4,14 @@
   "description": "phoenxi-workshop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha",
     "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jgarciaqo/phoenix-workshop.git"
   },
-  "author": "",
+  "author": "ns",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jgarciaqo/phoenix-workshop/issues"
@@ -20,6 +20,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "jade": "^1.11.0",
+    "mocha": "^2.3.4",
     "nodemon": "1.8.1"
   }
 }

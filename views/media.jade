@@ -1,7 +1,11 @@
 extends layout
 
 block content
-    .media
-        .media-left
-        a(href='/', class='media-object')
-        img(src='http://jade-lang.com/style/jade-logo-header.svg')
+	.container
+		h1=content
+		
+		.media
+			a(href='/', class='media-object')
+				img(src=images[0])
+			a(href='/', class='media-object')
+				img(src=images[1])
